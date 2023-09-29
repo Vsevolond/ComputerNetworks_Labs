@@ -1,0 +1,34 @@
+https://losst.ru/monitoring-setevyh-podklyuchenij-v-linux - утилита ss
+https://losst.ru/kak-posmotret-otkrytye-porty-v-linux - netstat
+
+netstat -tnlp далее ps -ax и посмотреть номер процесса
+sudo ss -tulpn | grep :80
+lsof -i -P
+
+----------------------------
+
+https://habr.com/ru/company/alexhost/blog/531170/ - tcpdump
+https://xakep.ru/2012/02/06/tcpdump-network-audit/
+
+tcpdump
+tcpdump -D - доступные интерфейсы
+tcpdump --list-interfaces  - доступные интерфейсы
+
+tcpdump -i eth1
+tcpdump -i venet0
+
+Фильтры tcpdump
+port
+host
+src
+dst
+tcp
+udp
+icmp
+tcpdump -i venet0 -c 5 port 80 - ограничение на 5 пакетов
+tcpdump -i venet0 -c 5 -X  port 8000 - ограничение на 5 пакетов
+tcpdump -i venet0 -X  port 8000
+tcpdump -i venet0 -c 5 -X  port 9090
+tcpdump -i venet0  -X  port 80
+
+

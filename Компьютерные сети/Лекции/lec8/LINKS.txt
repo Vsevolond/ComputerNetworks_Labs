@@ -1,0 +1,7 @@
+Для сравнения разбираем mod_rewrite правила на примере правила в .haccess файле который лежит на pstgu.yss.su в корне вебсервера
+тут /www/pstgu.yss.su, а сам скрипт запускается так
+http://pstgu.yss.su/iu9/networks/lab8/test.php?id=10
+или
+http://pstgu.yss.su/iu9/networks/lab8/test/10
+
+Документация по mod_rewrite: https://hackware.ru/?p=5645

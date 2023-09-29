@@ -1,0 +1,2 @@
+https://losst.ru/nastrojka-seti-v-linux - утилита ip
+https://losst.ru/marshrutizatsiya-v-linux - утилита routel
